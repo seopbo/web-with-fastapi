@@ -18,6 +18,7 @@ async def sign_new_user(data: User) -> dict:
         "message": "User successfully registered!"
     }
 
+
 @user_router.post("/signin")
 async def sign_user_in(user: UserSignIn) -> dict:
     if user.email not in users:
