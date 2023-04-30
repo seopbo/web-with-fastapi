@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List
 
-class Event(BaseModel):
+class Event(BaseModel): # 이벤트 모델
     id: int # 자동 생성되는 고유 식별자
     title: str # 이벤트 타이틀
     image: str # 이벤트 이미지 배너의 링크
