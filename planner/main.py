@@ -6,7 +6,7 @@ import uvicorn
 app = FastAPI()
 # 라우트 등록
 app.include_router(user_router, prefix="/user")
-app.include_router(event_router, prefix="event")
+app.include_router(event_router, prefix="/event")
 
 
 if __name__ == "__main__":
